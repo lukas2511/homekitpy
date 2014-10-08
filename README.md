@@ -12,7 +12,7 @@ avahi-publish -s Test _hap._tcp 50000 'md=Test' 's#=1' 'pv=1.0' 'ff=0' 'c#=2' 'i
 
 From what I see you do not really need an MFi certified device to get HomeKit working, but you will receive a warning when adding the device to your home (so basically only once).
 
-I'm not an expert, and I figured most of this stuff out by watching the traffic from iOS Simulator to HomeKit Acc Simulator and some disassembly of the HAPAccessoryKit framework, so it might not even work in the end.
+I'm not an expert, and I figured most of this stuff out by watching the traffic from iOS Simulator to HomeKit Acc Simulator and some disassembly of the HAPAccessoryKit framework (there was also some code floating on the interwebz https://github.com/MXCHIP/MICO but I only found it after figuring most of the stuff out by myself..), so it might not even work in the end.
 
 Also I'm not sure if I'm going to continue development on this, because I decided to use MQTT for my smarthome-bullshit and do not really need this anymore.
 
